@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  padding: 2.3rem;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 204, 128, 0.7)), to(rgba(230, 81, 0, 0.7))), url(/img/header.jpg);
+  background-image: linear-gradient(to bottom right, rgba(255, 204, 128, 0.7), rgba(230, 81, 0, 0.7)), url(/img/header.jpg);
+  background-size: cover;
+  height: 95vh;
+  position: relative;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+.header__ul__li {
+  background-image: -webkit-gradient(linear, left top, right top, from(#004792), to(#0039a6));
+  background-image: linear-gradient(to right, #004792, #0039a6);
+  letter-spacing: 2px;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.heading-primary {
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#b2ffff), to(darkturquoise));
+  background-image: linear-gradient(to right, #b2ffff, darkturquoise);
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-transition: 0.8s all;
+  transition: 0.8s all;
+}
+
+.heading-primary:hover {
+  border-bottom: 0.7px solid #fff;
+}
+
+.heading-primary--main {
+  display: block;
+  letter-spacing: 5px;
+}
+
+.heading-primary--sub {
+  display: block;
+  letter-spacing: 3px;
+  margin-top: 0.7rem;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 114rem;
+}
+
+.col-1-of-2 {
+  width: calc((100% - $gutter-horizontal) / 2);
+  float: left;
+}
+
+.col-1-of-2::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1-of-3 {
+  width: calc(2 * ((100% - $gutter-horizontal)) / 3);
+  float: left;
+}
+
+.col-1-of-3::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  padding: 0px 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.4rem;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  color: #4afc32;
+  margin-top: 1.7rem;
+}
+
+.btn:hover {
+  background-color: #4afc32;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
